@@ -2,10 +2,10 @@
 
 A unit test is a way of testing the smallest components of an application to examine their behavior. For example, by testing methods in a web application, we can observe the results they produce. It acts as an early warning system for the application, reducing the possibility of future errors by allowing us to spot potential issues ahead of time.
 
+![](https://github.com/Memo-Can/unit-test-learning/blob/main/assets/images/unittest.png)
+
 Integration tests, focus on testing how components and modules work together.
-
 End-to-End (E2E) tests, refer to testing the entire application from start to finish to ensure everything functions correctly.
-
 UI tests, focus on testing the user interface of an application.
 
 
@@ -23,6 +23,8 @@ Within xUnit, the essential objects needed for testing are provided by the xunit
 
 Unit tests consist of three stages: Arrange, Act, and Assert.
 
+![](https://github.com/Memo-Can/unit-test-learning/blob/main/assets/images/script.png)
+
 1. Arrange defines the test parameters for the object being 
 2. tested. Parameters are defined as variables, and the class to be tested is initialized.
 3. Act refers to the place where the methods to be tested are executed.
@@ -36,17 +38,17 @@ Test methods that don't take parameters must include the [Fact] attribute at the
 
 ## XUnit Assert Methods
 
-1. Contain/DoesNotContain: These methods check for expected values within the results. They can search both in arrays and within strings.
-2. True/False: These methods return a boolean result based on the given condition, essentially checking for true or false.
-3. Matches/DoesNotMatch: These methods use regular expressions and return a boolean result.
-4. StartWith/EndWith: These methods check if the string contains a specific value at the start or end.
-5. Empty/NotEmpty: These methods verify if an array contains elements or not.
-6. InRange/NotInRange: These methods check if a value falls within a specific range.
-7. Single: This method checks if an array contains only one object.
-8. IsType/IsNotType: These methods check the type of a variable generically.
-9. IsAssignableFrom: This checks if a type can be referenced by another.
-10. Null/NotNull: These methods check whether an object is null or not, returning a boolean result.
-11. Equal/NotEqual: These methods check whether an object is equal to another.
+1. **Contain/DoesNotContain**: These methods check for expected values within the results. They can search both in arrays and within strings.
+2. **True/False**: These methods return a boolean result based on the given condition, essentially checking for true or false.
+3. **Matches/DoesNotMatch**: These methods use regular expressions and return a boolean result.
+4. **StartWith/EndWith**: These methods check if the string contains a specific value at the start or end.
+5. **Empty/NotEmpty**: These methods verify if an array contains elements or not.
+6. **InRange/NotInRange**: These methods check if a value falls within a specific range.
+7. **Single**: This method checks if an array contains only one object.
+8. **IsType/IsNotType**: These methods check the type of a variable generically.
+9. **IsAssignableFrom**: This checks if a type can be referenced by another.
+10. **Null/NotNull**: These methods check whether an object is null or not, returning a boolean result.
+11. **Equal/NotEqual**: These methods check whether an object is equal to another.
 
 
 ## Parameters in Test Methods
