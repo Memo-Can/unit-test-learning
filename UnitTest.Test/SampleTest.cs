@@ -11,7 +11,7 @@ public class SampleTest
         //Arrange
         float price = 100;
         float rate = 20;
-        var taxedPrice = new TaxCalculator();
+        var taxedPrice = new TaxCalculatorService();
 
         //Act
         var result = taxedPrice.AddRate(price, rate);

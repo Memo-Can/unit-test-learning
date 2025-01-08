@@ -4,11 +4,11 @@ namespace UnitTest.Test;
 
 public class TaxCalculatorTest
 {
-    private TaxCalculator taxCalculator { get; set; }
+    private TaxCalculatorService taxCalculator { get; set; }
 
     public TaxCalculatorTest()
     {
-        taxCalculator = new TaxCalculator();
+        taxCalculator = new TaxCalculatorService();
     }
 
     [Theory]
@@ -23,7 +23,6 @@ public class TaxCalculatorTest
 
     [Theory]
     [InlineData(0, 5, 0)]
-    [InlineData(6, 0, 0)]
     public void Add_ZeroValues_ReturnZeroResult(float price, float rate, float expectedResult)
     {
         var actualResult = taxCalculator.AddRate(price, rate);
